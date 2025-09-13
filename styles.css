@@ -1,0 +1,212 @@
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #0b1a38; /* deep navy */
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #0b1a38;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37; /* gold */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin: 0;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+#hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 26, 56, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+OAOAOA.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+OAOAOAOAOAOAOAOAOA    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+OAOAOA}
+
+.hero-content p {
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+section {
+    padding: 50px 40px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #d4af37;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.auction-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.auction-item {
+    background-color: #14294e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auction-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.auction-item h3 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.auction-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.bid-button {
+    background-color: #d4af37;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0b1a38;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.bid-button:hover {
+    background-color: #b3922f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #d4af37;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #d4af37;
+    color: #0b1a38;
+    font-weight: 700;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #b3922f;
+}
+
+#form-status {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #d4af37;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+}
+
